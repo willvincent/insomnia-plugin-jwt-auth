@@ -1,6 +1,6 @@
 {
   "name": "insomnia-plugin-jwt-auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "insomnia": {
     "name": "jwt-auth-token",
     "description": "This plugin will auto set the bearer authorization header with a jwt token, after its received from a login api response",
