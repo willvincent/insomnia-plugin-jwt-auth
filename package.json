@@ -10,7 +10,7 @@
   "author": "willvincent",
   "repository": {
     "type": "git",
-    "url": "git@github.com:willvincent/insomnia-plugin-auto-set-bearer-token.git"
+    "url": "git+ssh://git@github.com/willvincent/insomnia-plugin-auto-set-bearer-token.git"
   },
   "images": {
     "icon": "icon.png"
@@ -27,5 +27,14 @@
   ],
   "dependencies": {
     "lodash.get": "^4.4.2"
+  },
+  "description": "This is a plugin for [insomnia](https://insomnia.rest) that will store a jwt token after successful login to an api, and automatically send it to all further requests that should be authenticated.",
+  "bugs": {
+    "url": "https://github.com/willvincent/insomnia-plugin-auto-set-bearer-token/issues"
+  },
+  "homepage": "https://github.com/willvincent/insomnia-plugin-auto-set-bearer-token#readme",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
