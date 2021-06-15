@@ -53,3 +53,7 @@ To do so, simply populate the list of desired routes into an array for `unathent
 ```
 
 Note - it's not necessary to provide full paths, ie: `/api/v1/user` could simply be specified as `user` as the matching used simply looks for a string match.  The caveat here is if you have similar routes and only want to prevent auth headers on one, you need to be more specific in the definition - and routes that require a property cannot be used, so you couldn't for example include `/api/v1/user/*/delete` where the * indicates a wildcard or other parameter needing to be passed in, that won't work. (Pull requests welcome)
+
+
+#### Thanks
+Forked & extended from [thatcatinsomnia's package](https://github.com/thatcatinsomnia/insomnia-plugin-auto-set-bearer-token)
