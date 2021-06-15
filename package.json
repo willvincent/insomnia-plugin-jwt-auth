@@ -1,0 +1,31 @@
+{
+  "name": "insomnia-plugin-jwt-auth",
+  "version": "1.0.0",
+  "insomnia": {
+    "name": "jwt-auth-token",
+    "description": "This plugin will auto set the bearer authorization header with a jwt token, after its received from a login api response",
+    "displayName": "JWT Auth Token"
+  },
+  "main": "main.js",
+  "author": "willvincent",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:willvincent/insomnia-plugin-auto-set-bearer-token.git"
+  },
+  "images": {
+    "icon": "icon.png"
+  },
+  "license": "MIT",
+  "keywords": [
+    "insomnia",
+    "plugin",
+    "custom",
+    "bearer",
+    "jwt",
+    "token",
+    "authorization"
+  ],
+  "dependencies": {
+    "lodash.get": "^4.4.2"
+  }
+}
