@@ -2,7 +2,7 @@
 This is a plugin for [insomnia](https://insomnia.rest) that will store a jwt token after successful login to an api, and automatically send it to all further requests that should be authenticated.
 
 ## Usage
-If your api's login route contains `login` in the path, and the response from a successful login inclues the jwt token in the root of the response json, as the property `token` all you need to do is install the plugin inside insomnia, the plugin will do the rest.
+If your api's login route contains `login` in the path, and the response from a successful login includes the jwt token in the root of the response json, as the property `token` all you need to do is install the plugin inside insomnia, the plugin will do the rest.
 
 Once installed (and optionally further configured) upon successful login, the jwt token will be stored within insomnia and automatically populated into future requests.
 

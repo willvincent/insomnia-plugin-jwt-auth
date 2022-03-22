@@ -22,7 +22,10 @@ module.exports.requestHooks = [
 module.exports.responseHooks = [
   async context => {
     // get the token field name response from api
-    const tokenName = context.request.getEnvironmentVariable('access_token');
+    let tokenName = context.request.getEnvironmentVariable('access_token');
+    if (!tokenName) {
+      tokenName = 'token';
+    }
     
 
     // check if current route is login
@@ -37,7 +40,7 @@ module.exports.responseHooks = [
     if (isLoginPath) {
       const res = context.response.getBody().toString();
       const data = JSON.parse(res);
-      const token = _get(data, tokenName, 'token');
+      const token = _get(data, tokenName, 'no token');
 
       console.log(tokenName);
       console.log(token);
